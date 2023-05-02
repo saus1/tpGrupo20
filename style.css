@@ -1,83 +1,48 @@
-*{
- box-sizing: border-box; 
- margin:0; 
- padding: 0; 
+* {
+  padding: 0; 
+  box-sizing: border-box;
 }
-
 
 html{
-    height:100%;
+   font-size: 1rem;
+   height: 100%;
 }
-body{
- font-family: 'Courier New', Courier, monospace;  
- font-size: 1.2rem; 
- min-height: 100%;
-}
-.grid-container *{
-    box-sizing: -1px 1px 7px 0px rgba(0,0,0,0.75);
-    border-radius: 4px;
-    padding: 10px;
-    text-align-last: center;
-}
-.grid-container{
-    display: grid;
-    gap: 10px;
-    grid-template:
-      "header"   100px
-      "navbar"   50px
-      "main"     auto
-      "siderbar" 100px
-      "footer"   100px;
-
+body,header,main,footer {
+   border: 3px grey solid;
+   min-height: 50px;
+   margin: 0.5rem ;
+   min-width: 400px; ;
 }
 
-.header {
-grid-area: header;
-background-color:cadetblue;
+main{
+ min-height: 500px;  
 }
-.navbar {
-grid-area:navbar;
-background-color: burlywood;
+.header-logo{
+   width: auto;
+   display: inline-block;
+   margin:0.5rem ;
+   
 }
 
-.siderbar {
-grid-area:siderbar;
-background-color:rgb(128, 234, 162);
- } 
 
-
-.main {
-grid-area:main;
-background-color:rgb(82, 210, 210);
- } 
-
- .footer {
-    grid-area:footer;
-    background-color:rgb(82, 210, 210);
-} 
-
-@media(min-width:600px) {
-  .grid-container{
-    grid-template-columns: 200px auto ;
-    grid-template-rows: 100px 50px auto 100px;
-
-    grid-template-areas:
-      "header   header"
-      "navbar   narbar"
-      "siderbar main"
-      "footer   footer";
-  }
+.header-menuBar{
+   left: auto;
+   position: relative;
+   top: auto;
+   width: auto;
+   display:inline-block ;
+   margin: 0.5rem 0 0.5rem 1rem;
 }
-  @media(min-width:900px) {
-    .grid-container{
-      grid-template-columns: 100px auto ;
-      grid-template-rows: 100px 50px auto 100px;
-  
-      grid-template:
-        "header  header header"  100px
-        "navbar  main   sidebar" auto
-        "footer  footer footer"  100px /
-        200px    auto   200px
-    }
 
-}    
+
+.header-menuBar ul{
+   list-style: none;
+}
+.header-menuBar li{
+   float: left;
+   font-weight: 700;
+   text-align: center;
+   margin: 0 0.5rem 0;
+   font-size: larger;
+   
+}
