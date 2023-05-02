@@ -8,7 +8,7 @@ html{
    height: 100%;
 }
 body,header,main,footer {
-   border: 3px grey solid;
+   border: 3px rgb(205, 202, 202) solid;
    min-height: 50px;
    margin: 0.5rem ;
    min-width: 400px; ;
@@ -45,4 +45,25 @@ main{
    margin: 0 0.5rem 0;
    font-size: larger;
    
+}
+.header-menuBar a{
+  text-decoration: none;
+  color: black;
+}
+.header-menuBar a:hover{
+  color:red;
+}
+.header-menuBar li a{
+  font-size: 1.5rem;
+
+}
+
+.formRegistro{
+  width: 400px;
+  background: gray;
+  padding: 30px;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'Times New Roman', Times, serif;
+
 }
