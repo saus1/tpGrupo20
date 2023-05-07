@@ -58,12 +58,37 @@ main{
 
 }
 
-.formRegistro{
-  width: 400px;
-  background: gray;
-  padding: 30px;
-  margin-top: 100px;
-  border-radius: 4px;
-  font-family: 'Times New Roman', Times, serif;
+.from-Registro formulario{
+  margin:0px auto ;
+}
+ 
+input ,textarea {
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 7px;
+   box-sizing: border-box;
+}
 
+form {
+   width: 450px;
+   margin: auto;
+   background: rgba(0,0,0,0.2);
+   padding: 10px 20px;
+   box-sizing: border-box;
+   margin-top: 20px;
+   border-radius: 7px;
+}
+h2{
+   color: white;
+   text-align: center;
+   margin: 0;
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+
+.fondoContacto {
+   background-image: url(/fondoContacto.jfif);
+   min-height: 500px;
+   background-attachment: fixed;
+   margin: 0;
 }
