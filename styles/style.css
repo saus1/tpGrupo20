@@ -9,9 +9,9 @@ html{
    height: 100%;
 }
 body,header,main,footer {
-   border: 3px rgb(205, 202, 202) solid;
+   border: 0.1px rgb(205, 202, 202) solid;
    min-height: 50px;
-   margin: 0.5rem ;
+   margin: 0.2rem ;
    min-width: 400px; ;
 }
 
@@ -72,11 +72,12 @@ input ,textarea {
 
 form {
    width: 450px;
+   height: 500px;
    margin: auto;
    background: rgba(0,0,0,0.2);
    padding: 10px 20px;
    box-sizing: border-box;
-   margin-top: 20px;
+   margin-top:0.5px;
    border-radius: 7px;
 }
 h2{
