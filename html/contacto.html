@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Contacto</title>
+    <script  src="/scrips/app.js"></script>
 </head>
 <body>
     
@@ -23,17 +24,40 @@
     <main >
         
         <div class="fondoContacto">
-            <form action="">
-                 <h2>CONTACTO</h2>
-                   <input type="text"  name="nombre"  placeholder="escriba aqui su nombre">
-                   <input type="email" name="email"  placeholder="escriba aqui su email" >
-                   <input type="text" name="telefono"  placeholder="escriba aqui su telefono" >
-                    <textarea name="mensaje" placeholder="Escriba sus cometarios"></textarea>
-                    <input type="button" value="ENVIAR" id="boton">
-            </form>
+            <form id="form" action="https://formspree.io/f/xjvddbkr" method="POST" >
+                <h2>CONTACTO</h2>
+                       <input type="text"  name="" id="nombre" required placeholder="escriba aqui su nombre">
+                       <input type="email" name="" id="email"  placeholder="escriba aqui su email" >
+                       <textarea name="text" id="mensaje" placeholder="Escriba sus cometarios"></textarea>
+                       <button type="submit"  id="boton"onclick=validarDatos() >ENVIAR</button>
+                      <!-- <input type="submit" id="boton"onclick=validarDatos()   id="boton"> -->
+                    
+                       
+                </form>
         </div>
         
     </main>
     <footer></footer>
+    <script>
+        const $form = document.querySelector('#form')
+          $form.addEventListener('submit',handleSubmit)
+          async function handleSubmit(event) {
+          event.preventDefault()
+          const from=new FormData(this)
+          const response=await fetch(this.action, {
+           method: this.method,
+           body:from,
+           headers:{
+               'Accept': 'application/json'
+           }
+          })
+   
+          if (response.ok){
+           this.reset()
+           alert('Gracias por contactarse,en breve estaremos en contacto')
+          }
+       }
+   
+       </script>
 </body>
 </html>
