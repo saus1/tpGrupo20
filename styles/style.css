@@ -11,7 +11,7 @@ html{
 body,header,main,footer {
    border: 0.1px rgb(205, 202, 202) solid;
    min-height: 50px;
-   margin: 0.2rem ;
+   margin: 0.1rem ;
    min-width: 400px; ;
 }
 
@@ -66,7 +66,7 @@ main{
 input ,textarea {
    width: 100%;
    margin-bottom: 20px;
-   padding: 7px;
+   padding: 8px;
    box-sizing: border-box;
 }
 
@@ -138,12 +138,18 @@ h2{
    color: seagreen;
 }
 
-.boton{
- background-color: black;
- color:white;
+#boton{
+ background-color: rgb(239, 239, 235);
+ color:black;
  font-weight: bold;
+ margin-top: 20px;
+ padding: 30px 180px;
+ border-radius: 7px;
+ 
+ 
+ 
 }
-.boton:hover{
+#boton:hover{
    cursor: pointer;
 }
 
