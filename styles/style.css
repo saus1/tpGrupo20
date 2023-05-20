@@ -88,7 +88,7 @@ h2{
 }
 
 .fondoContacto {
-   background-image: url(../tpGrupo20/fondoContacto.jfif);
+   background-image: url(/fondoContacto.jfif);
    min-height: 500px;
    background-attachment: fixed;
    margin: 0;
