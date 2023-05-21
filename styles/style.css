@@ -139,8 +139,8 @@ h2{
 }
 
 #boton{
- background-color: rgb(239, 239, 235);
- color:black;
+ background: rgba(0,0,0,0.5);
+ color:white;
  font-weight: bold;
  margin-top: 20px;
  padding: 30px 180px;
