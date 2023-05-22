@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Categorias</title>
+    <script src="https://kit.fontawesome.com/0c273bd24b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,6 +15,11 @@
 
     <header>
         <div class="header-logo"><a href="../index.html"><img src="../styles/logo.jpg" width="100" height="100" alt=""></a></div>
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir"><i class="fa-solid fa-bars"></i></span>
+            <span id="menu-cerrar">X</span>
+        </label>
         <nav class="header-menuBar">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -92,7 +98,16 @@
 
         <aside></aside>
     </main>
-    <footer></footer>
+    <footer>
+    <div class="footer-container">
+        <ul class="social-icons">
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+        <p class="copyright">&copy; 2023 Venta de Productos. Todos los derechos reservados.</p>
+      </div>
+    </footer>
 </body>
 
 </html>
