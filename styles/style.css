@@ -1,7 +1,10 @@
 * {
   padding: 0; 
   box-sizing: border-box;
-  background-color: #e4e4e4;
+}
+
+body {
+   background-color: #e4e4e4;   
 }
 
 html{
@@ -58,7 +61,90 @@ main{
   font-size: 1.5rem;
 
 }
+/* ------------------MENU RESPONSIVE---------------- */
+#menu, #menu-check {
+   display: none;
+}
 
+.fa-bars:hover {
+   color:white;
+}
+
+@media only screen and (max-width:590px){
+   #menu-check:not(:checked) ~ nav {
+      display: none;
+   }
+   #menu-check:checked ~ nav {
+      display:block;
+   }
+   #menu-cerrar {
+      display: none;
+   }
+
+   #menu-check:checked ~ label #menu-abrir {
+      display: none;
+   }
+   #menu-check:checked ~ label #menu-cerrar {
+      display:block;
+   }
+   .header-menuBar {
+      background-color: #b0b0b0; 
+      display: flex;
+      flex-direction: column;
+      position:absolute;
+      top:0;
+      right: 0;
+      height: 100%;
+      padding-top: 0.5em;
+      padding-right: 1.5em;
+      z-index: 1;
+      width: 40%;
+   }
+   #menu {
+      position: absolute;
+      top:1.3em;
+      right: 1.3em;
+      display:flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding:5px;
+      margin:5px;
+      z-index:100;
+      padding:3px;
+   }
+   #menu:hover {
+      background-color: rgb(207, 207, 207);
+      border-radius: 10px;
+      color: white;
+   }
+
+   #menu-abrir {
+      color: black;
+      font-size: 2rem;
+      z-index: 100;
+   }
+
+   #menu-cerrar {
+      color: black;
+      font-size: 2rem;
+      z-index: 100;
+   }
+   
+   li a {
+      z-index: 10;
+      color: white;
+   }
+
+   @media only screen and (max-width:500px){
+      nav {
+         display: none;
+      }
+   }
+}
+
+
+
+/*--------------------FORM-------------------------- */
 .from-Registro formulario{
   margin:0px auto ;
 }
@@ -89,7 +175,7 @@ h2{
 }
 
 .fondoContacto {
-   background-image: url(/fondoContacto.jfif);
+   background-image: url(../fondoContacto.jfif);
    min-height: 500px;
    background-attachment: fixed;
    margin: 0;
@@ -157,4 +243,55 @@ h2{
   from{
    width: 100%;
   }
+}
+/* ---------------------IFRAME------------------------- */
+.about-us-container {
+   position:relative;
+   top:3em;
+   background-color:gray;
+   height:10em;
+   display:flex;
+   justify-content:center;
+}
+h3 {
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-size:2em;
+   color:white;
+}
+
+.iframe-container {
+   top:3em;
+   display:flex;
+   justify-content:center;
+   width:100%;
+}
+
+iframe {
+   display:flex;
+   justify-content:center;
+   align-items: center;
+   width:60%;
+}
+
+/*------------FOOTER-------------------*/
+footer {
+   background-color: gray;
+}
+.footer-container {
+   height: 10em;
+}
+.social-icons {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap:15px;
+}
+.fab:hover{
+   color:black;
+}
+
+.copyright{
+   width: 100%;
+   display: flex;
+   justify-content: center;
 }
