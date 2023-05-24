@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="../styles/style.css">
     <script src="https://kit.fontawesome.com/0c273bd24b.js" crossorigin="anonymous"></script>
     <title>Carrito</title>
+    <script src="https://unpkg.com/vue@3"></script>
 </head>
-<body>
-    
-  
+<body>  
     <header>
         <div class="header-logo"><a href="../index.html"> <img src="../styles/logo.jpg"  width="100" height="100" alt=""></a></div>
         <input type="checkbox" id="menu-check">
@@ -29,7 +28,50 @@
         </nav>
     </header>
     <main>
-        <div></div>
+        <div id="tables" class="container">
+            <table class="flex-child">
+                <thead>
+                    <tr>
+                      <th>id</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                <tbody>
+                    <tr v-for='item in productos' class="tRow">
+                      <td>{{item.id}}</td>
+                      <td>{{item.nombre}}</td>
+                      <td class="aling-center">{{item.precio}}</td>
+                      <td class="aling-center"><button @click="addItem(item)" class="table-button">+</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="flex-child">
+                <thead>
+                    <tr>
+                      <th>id</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for='item in productosCompras' class="tRow">
+                      <td>{{item.id}}</td>
+                      <td>{{item.nombre}}</td>
+                      <td class="aling-center">{{item.precio}}</td>
+                      <td class="aling-center"><button @click="removeItem($event.target.parentNode.parentNode.sectionRowIndex)" class="table-button">-</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>total: {{precioTotal}}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <aside></aside>
     </main>
     <footer>
@@ -42,5 +84,69 @@
             <p class="copyright">&copy; 2023 Venta de Productos. Todos los derechos reservados.</p>
           </div>
         </footer>
+    
+        <script>
+            
+            
+            const { createApp } = Vue;
+
+            const table = Vue.createApp({
+
+                data() {
+                    return {
+                        productos : [
+                            {
+                                "id": "1",
+                                "nombre" : "Calefactor Electrico",
+                                "precio" : "77000",
+                                "img" : "'../styles/ImagenDeProductos/productoCalecfaccion.png'",
+                                "descripcion" : ""
+                            },
+                            {
+                                "id": "2",
+                                "nombre" : "Cafetera Electrica",
+                                "precio" : "55000",
+                                "img" : "",
+                                "descripcion" : ""
+                            },
+                            {
+                                "id": "3",
+                                "nombre" : "Tv 4k",
+                                "precio" : "190000",
+                                "img" : "",
+                                "descripcion" : ""
+                            },
+                            {
+                                "id": "4",
+                                "nombre" : "Cocina",
+                                "precio" : "85000",
+                                "img" : "",
+                                "descripcion" : ""
+                            },
+                            {
+                                "id": "5",
+                                "nombre" : "Aire Acondicionado",
+                                "precio" : "120000",
+                                "img" : "",
+                                "descripcion" : ""
+                            }
+                        ],
+                        productosCompras:[],
+                        precioTotal: 0,
+                    } 
+                },
+                methods: {
+                    addItem(i){
+                        this.productosCompras.push(i)
+                        this.precioTotal=parseInt(this.precioTotal)+parseInt(i.precio)
+                    },
+                    removeItem(rowIndex){
+                        this.precioTotal=parseInt(this.precioTotal)-parseInt(this.productosCompras[rowIndex].precio)                        
+                        this.productosCompras.splice(rowIndex,1)
+                    }
+                },
+            }).mount('#tables')
+
+        </script>
 </body>
 </html>

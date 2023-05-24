@@ -1,0 +1,40 @@
+{
+    "productos" : [
+        {
+            "id": "1",
+            "nombre" : "Calefactor Electrico",
+            "precio" : "77.000",
+            "img" : "",
+            "descripcion" : ""
+        },
+        {
+            "id": "2",
+            "nombre" : "Cafetera Electrica",
+            "precio" : "55.000",
+            "img" : "",
+            "descripcion" : ""
+        },
+        {
+            "id": "3",
+            "nombre" : "Tv 4k",
+            "precio" : "190.000",
+            "img" : "",
+            "descripcion" : ""
+        },
+        {
+            "id": "4",
+            "nombre" : "Cocina",
+            "precio" : "85.000",
+            "img" : "",
+            "descripcion" : ""
+        },
+        {
+            "id": "5",
+            "nombre" : "Aire Acondicionado",
+            "precio" : "120.000",
+            "img" : "",
+            "descripcion" : ""
+        }
+    ]
+    
+}
