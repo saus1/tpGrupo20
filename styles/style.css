@@ -665,6 +665,29 @@
    cursor: pointer;
  }
 
+ .contAcerca {
+  display: flex;
+  -ms-flex-item-align: center;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  height: auto;
+  /*justify-content:stretch;*/
+  justify-content: space-between;
+  
+ }
+ .acerImagen{
+  height:auto;
+  width:auto;
+
+ }
+ .acerParrafo{
+  border: 0.1px rgb(205, 202, 202) solid;
+  margin: 0.1rem ;
+  text-justify: auto;
+  height:auto;
+  width: auto;
+ }
 
  /* carrusel*/
 

@@ -5,7 +5,7 @@ const productos = [
     nombre: "Aire Acondicionado",
     precio: 380000,
     img:
-      "ImagenDeProductos/productoAireAcondicionado.png",
+      "/ImagenDeProductos/productoAireAcondicionado.png",
     cantidad: 1,
   },
   {
@@ -13,7 +13,7 @@ const productos = [
     nombre: "Cafetera",
     precio: 80000,
     img:
-      "ImagenDeProductos/productoCafetera.png",
+      "/ImagenDeProductos/productoCafetera.png",
     cantidad: 1,
   },
   {
@@ -21,13 +21,13 @@ const productos = [
     nombre: "Cocina",
     precio: 270000,
     img:
-      "ImagenDeProductos/productoCocina.png",
+      "/ImagenDeProductos/productoCocina.png",
   },
   {
     id: 4,
     nombre: "Tv Led",
     precio: 200,
     img:
-      "ImagenDeProductos/productoTvLed.png",
+      "/ImagenDeProductos/productoTvLed.png",
   },
 ];
