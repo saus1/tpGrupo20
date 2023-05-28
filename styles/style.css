@@ -18,9 +18,7 @@
     min-width: 400px; ;
  }
  
- main{
-  min-height: 500px;  
- }
+
  .header-logo{
     width: auto;
     display: inline-block;
@@ -309,7 +307,6 @@
     overflow: auto;
     z-index: 9;
     top: 12vh;
-    scrollbar-color: none;
   }
   
   .modal-container::-webkit-scrollbar {
@@ -412,7 +409,6 @@
     justify-content:center;
  }
  h3 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:2em;
     color:white;
  }
@@ -458,7 +454,13 @@
  
  
  body {
-   margin: 0px;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ main{
+  flex: 1;
  }
  /*navbar*/
  .nav-container {
@@ -530,7 +532,6 @@
    max-width: 300px;
    margin: auto;
    text-align: center;
-   font-family: arial;
    margin: 10px;
  }
  
@@ -575,7 +576,6 @@
    overflow: auto;
    z-index: 9;
    top: 12vh;
-   scrollbar-color: none;
  }
  
  .modal-container::-webkit-scrollbar {
@@ -684,7 +684,6 @@
  .acerParrafo{
   border: 0.1px rgb(205, 202, 202) solid;
   margin: 0.1rem ;
-  text-justify: auto;
   height:auto;
   width: auto;
  }
