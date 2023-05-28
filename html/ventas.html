@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Market Sop</title>
+  </head>
+  <body>
+    <!--navBar-->
+    <header>
+      <div class="header-logo"><a href="/index.html"><img src="/styles/logo.jpg" width="100" height="100" alt=""></a></div>
+      <input type="checkbox" id="menu-check">
+      <label id="menu" for="menu-check">
+          <span id="menu-abrir"><i class="fa-solid fa-bars"></i></span>
+          <span id="menu-cerrar">X</span>
+      </label>
+      <nav class="header-menuBar">
+          <ul>
+              <li><a href="index.html">Inicio</a></li> 
+               <li> <a href="/html/ventas.html">Ventas</a></li>
+               <li><a href="/html/carrito.html">Carrito</a></li> 
+               <li><a href="/html/contacto.html">Contacto</a></li>
+           
+          </ul>
+      </nav>
+  </header>
+    <main>
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 class="navbar-logo">Shop.</h1>
+        <h1 class="ver-carrito" id="verCarrito">🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
+      </nav>
+    </div>
+
+    <!--banner-->
+    <div class="banner">
+      <div class="banner-container">
+        <h1>SuperMarket Shop</h1>
+        <p>the best place to do your shopping</p>
+      </div>
+    </div>
+
+    <!--shop content-->
+    <div id="shopContent" class="shop-content"></div>
+
+    <!--modal container-->
+    <div id="modal-container" class="modal-container"></div>
+    
+  
+  </main>
+  <script src="/scrips/products.js"></script>
+  <script src="/scrips/app.js"></script>
+  <script src="/scrips/carrito1.js"></script>
+      <footer>
+        <div class="footer-container">
+            <ul class="social-icons">
+              <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            <p class="copyright">&copy; 2023 Venta de Productos. Todos los derechos reservados.</p>
+          </div>
+        </footer>
+  </body>
+</html>

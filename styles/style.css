@@ -1,321 +1,666 @@
 * {
-  padding: 0; 
-  box-sizing: border-box;
-}
-
-body {
-   background-color: #e4e4e4;   
-}
-
-html{
-   font-size: 1rem;
-   height: 100%;
-}
-body,header,main,footer {
-   border: 0.1px rgb(205, 202, 202) solid;
-   min-height: 50px;
-   margin: 0.1rem ;
-   min-width: 400px; ;
-}
-
-main{
- min-height: 500px;  
-}
-.header-logo{
-   width: auto;
-   display: inline-block;
-   margin:0.5rem ;
-   
-}
-
-
-.header-menuBar{
-   left: auto;
-   position: relative;
-   top: auto;
-   width: auto;
-   display:inline-block ;
-   margin: 0.5rem 0 0.5rem 1rem;
-}
-
-
-.header-menuBar ul{
-   list-style: none;
-}
-.header-menuBar li{
-   float: left;
-   font-weight: 700;
-   text-align: center;
-   margin: 0 0.5rem 0;
-   font-size: larger;
-   
-}
-.header-menuBar a{
-  text-decoration: none;
-  color: black;
-}
-.header-menuBar a:hover{
-  color:red;
-}
-.header-menuBar li a{
-  font-size: 1.5rem;
-
-}
-/* ------------------MENU RESPONSIVE---------------- */
-#menu, #menu-check {
-   display: none;
-}
-
-.fa-bars:hover {
-   color:white;
-}
-
-@media only screen and (max-width:590px){
-   #menu-check:not(:checked) ~ nav {
-      display: none;
-   }
-   #menu-check:checked ~ nav {
-      display:block;
-   }
-   #menu-cerrar {
-      display: none;
-   }
-
-   #menu-check:checked ~ label #menu-abrir {
-      display: none;
-   }
-   #menu-check:checked ~ label #menu-cerrar {
-      display:block;
-   }
-   .header-menuBar {
-      background-color: #b0b0b0; 
-      display: flex;
-      flex-direction: column;
-      position:absolute;
-      top:0;
-      right: 0;
-      height: 100%;
-      padding-top: 0.5em;
-      padding-right: 1.5em;
-      z-index: 1;
-      width: 40%;
-   }
-   #menu {
-      position: absolute;
-      top:1.3em;
-      right: 1.3em;
-      display:flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding:5px;
-      margin:5px;
-      z-index:100;
-      padding:3px;
-   }
-   #menu:hover {
-      background-color: rgb(207, 207, 207);
-      border-radius: 10px;
-      color: white;
-   }
-
-   #menu-abrir {
-      color: black;
-      font-size: 2rem;
-      z-index: 100;
-   }
-
-   #menu-cerrar {
-      color: black;
-      font-size: 2rem;
-      z-index: 100;
-   }
-   
-   li a {
-      z-index: 10;
-      color: white;
-   }
-
-   @media only screen and (max-width:500px){
-      nav {
-         display: none;
-      }
-   }
-}
-
-/* Tablas*/
-
-.container{
- display: flex;
-}
-
-.flex-child{
-   flex: 1;
-   border: 1px black solid;
-}
-
-.flex-child:first-child{
-   margin-right: 20px;
-}
-td{
-   border: darkgrey solid 1px;
-   padding: 2px 5px;
-}
-.aling-center{
-   text-align: center;
-}
-
-.table-button{
-   width: 22px;
-   height: 22px;
-}
-/*--------------------FORM-------------------------- */
-.from-Registro formulario{
-  margin:0px auto ;
-}
+   padding: 0; 
+   box-sizing: border-box;
+ }
  
-input ,textarea {
-   width: 100%;
-   margin-bottom: 20px;
-   padding: 8px;
-   box-sizing: border-box;
-}
-
-form {
-   width: 450px;
-   height: 500px;
-   margin: auto;
-   background: rgba(0,0,0,0.2);
-   padding: 10px 20px;
-   box-sizing: border-box;
-   margin-top:0.5px;
-   border-radius: 7px;
-}
-h2{
-   color: white;
-   text-align: center;
-   margin: 0;
-   font-size: 30px;
-   margin-bottom: 20px;
-}
-
-.fondoContacto {
-   background-image: url(../fondoContacto.jfif);
-   min-height: 500px;
-   background-attachment: fixed;
-   margin: 0;
-}
-
-.contenedor{
-   width: 100%;
+ body {
+    background-color: #e4e4e4;   
+ }
+ 
+ html{
+    font-size: 1rem;
+    height: 100%;
+ }
+ body,header,main,footer {
+    border: 0.1px rgb(205, 202, 202) solid;
+    min-height: 50px;
+    margin: 0.1rem ;
+    min-width: 400px; ;
+ }
+ 
+ main{
+  min-height: 500px;  
+ }
+ .header-logo{
+    width: auto;
+    display: inline-block;
+    margin:0.5rem ;
+    
+ }
+ 
+ 
+ .header-menuBar{
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display:inline-block ;
+    margin: 0.5rem 0 0.5rem 1rem;
+ }
+ 
+ 
+ .header-menuBar ul{
+    list-style: none;
+ }
+ .header-menuBar li{
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0.5rem 0;
+    font-size: larger;
+    
+ }
+ .header-menuBar a{
+   text-decoration: none;
+   color: black;
+ }
+ .header-menuBar a:hover{
+   color:red;
+ }
+ .header-menuBar li a{
+   font-size: 1.5rem;
+ 
+ }
+ /* ------------------MENU RESPONSIVE---------------- */
+ #menu, #menu-check {
+    display: none;
+ }
+ 
+ .fa-bars:hover {
+    color:white;
+ }
+ 
+ @media only screen and (max-width:590px){
+    #menu-check:not(:checked) ~ nav {
+       display: none;
+    }
+    #menu-check:checked ~ nav {
+       display:block;
+    }
+    #menu-cerrar {
+       display: none;
+    }
+ 
+    #menu-check:checked ~ label #menu-abrir {
+       display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar {
+       display:block;
+    }
+    .header-menuBar {
+       background-color: #b0b0b0; 
+       display: flex;
+       flex-direction: column;
+       position:absolute;
+       top:0;
+       right: 0;
+       height: 100%;
+       padding-top: 0.5em;
+       padding-right: 1.5em;
+       z-index: 1;
+       width: 40%;
+    }
+    #menu {
+       position: absolute;
+       top:1.3em;
+       right: 1.3em;
+       display:flex;
+       justify-content: flex-end;
+       align-items: center;
+       padding:5px;
+       margin:5px;
+       z-index:100;
+       padding:3px;
+    }
+    #menu:hover {
+       background-color: rgb(207, 207, 207);
+       border-radius: 10px;
+       color: white;
+    }
+ 
+    #menu-abrir {
+       color: black;
+       font-size: 2rem;
+       z-index: 100;
+    }
+ 
+    #menu-cerrar {
+       color: black;
+       font-size: 2rem;
+       z-index: 100;
+    }
+    
+    li a {
+       z-index: 10;
+       color: white;
+    }
+ 
+    @media only screen and (max-width:500px){
+       nav {
+          display: none;
+       }
+    }
+ }
+ 
+ /* Tablas*/
+ 
+ .container{
   display: flex;
-  max-width: auto;
-      
-}
-.ficha {
-   width: 100%;
-   margin: 20px;
-   border-radius: 6px;
-   overflow: hidden;
-   background: white;
-   box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
-   cursor: default;
-   transition: all 400ms ease;
-}
-
-.ficha:hover{
-   box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-   transform: translate(-3%);
-}
-.ficha img{
- width: 100%;
- height:210px ;
-}
-.ficha h3{
-   text-align:center;
-   font-size:x-large;
-   color: cadetblue;
-}
-
-.ficha h4{
-   text-align:center;
-   font-size:larger;
-}
-.ficha p{
-   text-align:center;
-   font-family: sans-serif;
-   font-weight: bold;
-   font-size: x-large;
-   color: seagreen;
-}
-
-#boton{
- background: rgba(0,0,0,0.5);
- color:white;
- font-weight: bold;
- margin-top: 20px;
- padding: 30px 180px;
- border-radius: 7px;
+ }
+ 
+ .flex-child{
+    flex: 1;
+    border: 1px black solid;
+ }
+ 
+ .flex-child:first-child{
+    margin-right: 20px;
+ }
+ td{
+    border: darkgrey solid 1px;
+    padding: 2px 5px;
+ }
+ .aling-center{
+    text-align: center;
+ }
+ 
+ .table-button{
+    width: 22px;
+    height: 22px;
+ }
+ /*--------------------FORM-------------------------- */
+ .from-Registro formulario{
+   margin:0px auto ;
+ }
+  
+ input ,textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+ }
+ 
+ form {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    background: rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top:0.5px;
+    border-radius: 7px;
+ }
+ h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+ }
+ 
+ .fondoContacto {
+    background-image: url(../fondoContacto.jfif);
+    min-height: 500px;
+    background-attachment: fixed;
+    margin: 0;
+ }
  
  
+ #boton{
+  background: rgba(0,0,0,0.5);
+  color:white;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 30px 180px;
+  border-radius: 7px;
+  
+  
+  
+ }
+ #boton:hover{
+    cursor: pointer;
+ }
  
-}
-#boton:hover{
-   cursor: pointer;
-}
-
-@media (max-width:480px){
-  from{
-   width: 100%;
+ @media (max-width:480px){
+   from{
+    width: 100%;
+   }
+ }
+ 
+ .nav-container {
+    position: sticky;
+    z-index: 3;
+    top: 0;
   }
-}
-/* ---------------------IFRAME------------------------- */
-.about-us-container {
-   position:relative;
-   top:3em;
-   background-color:gray;
-   height:10em;
-   display:flex;
-   justify-content:center;
-}
-h3 {
-   font-family:Georgia, 'Times New Roman', Times, serif;
-   font-size:2em;
-   color:white;
-}
-
-.iframe-container {
-   top:3em;
-   display:flex;
-   justify-content:center;
-   width:100%;
-}
-
-iframe {
-   display:flex;
-   justify-content:center;
-   align-items: center;
-   width:60%;
-}
-
-/*------------FOOTER-------------------*/
-footer {
-   background-color: gray;
-}
-.footer-container {
-   height: 10em;
-}
-.social-icons {
-   list-style: none;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: #1b1b1b;
+  }
+  
+  .navbar-logo {
+    justify-self: start;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 4vh;
+    cursor: pointer;
+  }
+  
+  .ver-carrito {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+  }
+  
+  /*Banner styles*/
+  .banner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+     /* url("https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LFQZZ7KQEZAN7CYENQSH2F2PYQ.jpg");*/
+  }
+  
+  .banner-container {
+    text-align: center;
+    padding: 15% 0;
+  }
+  
+  .banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 62px;
+    font-weight: bold;
+  }
+  
+  .banner p {
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  /*product cards*/
+  .shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+ 
+  
+  /*modal content*/
+  .modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+  }
+  
+  .modal-container::-webkit-scrollbar {
+    display: none;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .modal-header-title {
+    justify-self: start;
+  }
+  
+  .modal-header-button {
+    cursor: pointer;
+  }
+  
+  .modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+  }
+  
+  .modal-container > div > img {
+    height: 120px;
+    width: 120px;
+  }
+  
+  .total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  /*se agregaron unas lineas de css con media querys para que se adapte mejor al responsive :)*/
+  
+  @media only screen and (max-width: 750px) {
+    .modal-container {
+      width: 100%;
+      margin: 0;
+      min-height: 88vh;
+    }
+  
+    .modal-container > .modal-content {
+      justify-content: space-between;
+      width: 100%;
+      margin: 2px;
+    }
+  
+    .modal-container > div > img {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  
+  /*delete button product*/
+  .delete-product {
+    cursor: pointer;
+  }
+  
+  /*CarritoCounter*/
+  .cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+  }
+  
+  .sumar {
+    cursor: pointer;
+  }
+  
+  .restar {
+    cursor: pointer;
+  }
+ 
+ 
+ 
+ 
+ /* ---------------------IFRAME------------------------- */
+ .about-us-container {
+    position:relative;
+    top:3em;
+    background-color:gray;
+    height:10em;
+    display:flex;
+    justify-content:center;
+ }
+ h3 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:2em;
+    color:white;
+ }
+ 
+ .iframe-container {
+    top:3em;
+    display:flex;
+    justify-content:center;
+    width:100%;
+ }
+ 
+ iframe {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:60%;
+ }
+ 
+ /*------------FOOTER-------------------*/
+ footer {
+    background-color: gray;
+ }
+ .footer-container {
+    height: 10em;
+ }
+ .social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap:15px;
+ }
+ .fab:hover{
+    color:black;
+ }
+ 
+ .copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ 
+ 
+ 
+ body {
+   margin: 0px;
+ }
+ /*navbar*/
+ .nav-container {
+   position: sticky;
+   z-index: 3;
+   top: 0;
+ }
+ .navbar {
    display: flex;
-   justify-content: center;
-   gap:15px;
-}
-.fab:hover{
-   color:black;
-}
-
-.copyright{
+   justify-content: space-between;
+   height: 12vh;
+   background-color: #1b1b1b;
+ }
+ 
+ .navbar-logo {
+   justify-self: start;
+   margin-left: 20px;
+   color: #fff;
+   margin-top: 4vh;
+   cursor: pointer;
+ }
+ 
+ .ver-carrito {
+   font-size: 25px;
+   margin-right: 20px;
+   margin-top: 3.5vh;
+   cursor: pointer;
+ }
+ 
+ /*Banner styles*/
+ .banner {
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+     url("https://img.freepik.com/fotos-premium/3d-conjunto-electrodomesticos-sobre-fondo-blanco_751108-1071.jpg")
+ }
+ .banner-container {
+   text-align: center;
+   padding: 15% 0;
+ }
+ 
+ .banner h1 {
+   margin: 0;
+   color: white;
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+   font-size: 62px;
+   font-weight: bold;
+ }
+ 
+ .banner p {
+   font-size: 30px;
+   color: white;
+   opacity: 0.7;
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+ }
+ 
+ /*product cards*/
+ .shop-content {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin-top: 30px;
+   margin-left: 60px;
+   margin-right: 60px;
+ }
+ .card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   max-width: 300px;
+   margin: auto;
+   text-align: center;
+   font-family: arial;
+   margin: 10px;
+ }
+ 
+ .card > img {
+   width: 90%;
+   height: 250px;
+ }
+ 
+ .price {
+   color: grey;
+   font-size: 22px;
+ }
+ 
+ .card button {
+   border: none;
+   outline: 0;
+   padding: 12px;
+   color: white;
+   background-color: #000;
+   text-align: center;
+   cursor: pointer;
    width: 100%;
+   font-size: 18px;
+ }
+ 
+ .card button:hover {
+   opacity: 0.7;
+ }
+ 
+ /*modal content*/
+ .modal-container {
+   width: 80%;
+   margin: 0 10%;
+   max-height: 88vh;
+   color: #fff;
+   background-color: #121212;
    display: flex;
-   justify-content: center;
-}
+   flex-direction: column;
+   align-items: center;
+   /*for the top*/
+   position: fixed;
+   overflow: auto;
+   z-index: 9;
+   top: 12vh;
+   scrollbar-color: none;
+ }
+ 
+ .modal-container::-webkit-scrollbar {
+   display: none;
+ }
+ .modal-header {
+   display: flex;
+   justify-content: space-around;
+   background-color: #0a0909;
+   color: #fff;
+   width: 100%;
+ }
+ 
+ .modal-header-title {
+   justify-self: start;
+ }
+ 
+ .modal-header-button {
+   cursor: pointer;
+ }
+ 
+ .modal-container > .modal-content {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   width: 70%;
+   margin: 10px;
+ }
+ 
+ .modal-container > div > img {
+   height: 120px;
+   width: 120px;
+ }
+ 
+ .total-content {
+   font-size: 25px;
+   padding: 20px;
+   text-align: center;
+   padding-top: 20px;
+ }
+ 
+ /*se agregaron unas lineas de css con media querys para que se adapte mejor al responsive :)*/
+ 
+ @media only screen and (max-width: 750px) {
+   .modal-container {
+     width: 100%;
+     margin: 0;
+     min-height: 88vh;
+   }
+ 
+   .modal-container > .modal-content {
+     justify-content: space-between;
+     width: 100%;
+     margin: 2px;
+   }
+ 
+   .modal-container > div > img {
+     height: 80px;
+     width: 80px;
+   }
+ }
+ 
+ /*delete button product*/
+ .delete-product {
+   cursor: pointer;
+ }
+ 
+ /*CarritoCounter*/
+ .cantidad-carrito {
+   background-color: red;
+   color: white;
+   border-radius: 50%;
+   font-size: 12px;
+   padding: 4px;
+   top: 37px;
+   right: 14px;
+   position: absolute;
+   display: none;
+ }
+ 
+ .sumar {
+   cursor: pointer;
+ }
+ 
+ .restar {
+   cursor: pointer;
+ }
