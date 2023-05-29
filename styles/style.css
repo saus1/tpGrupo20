@@ -670,23 +670,32 @@
   -ms-flex-item-align: center;
   flex-direction: row;
   align-items: center;
-  width: auto;
+  width: 1440px;
   height: auto;
-  /*justify-content:stretch;*/
   justify-content: space-between;
-  
+  margin-left: auto;
+  margin-right: auto;  
  }
- .acerImagen{
-  height:auto;
-  width:auto;
 
+ #acerImagen{
+  width: 100%;
  }
  .acerParrafo{
   border: 0.1px rgb(205, 202, 202) solid;
   margin: 0.1rem ;
-  height:auto;
-  width: auto;
  }
+
+ @media (max-width: 800px) {
+  .contAcerca {
+    flex-direction: column;
+  }
+}
+
+  @media (max-width: 1440px) {
+  .contAcerca {
+    width: auto;
+  }
+  }
 
  /* carrusel*/
 
@@ -699,3 +708,6 @@
  .carousel-item{
   justify-content: center;
  }
+
+
+ 
